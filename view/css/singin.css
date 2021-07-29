@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Heebo:wght@400;500;600&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: #2C2E43;
+}
+
+.logo {
+   font-family: 'Bungee', cursive;
+   position: relative;   
+}
+
+.span-logo {
+   position: relative;
+   z-index: 2;
+}
+
+.logo::before {
+   transform: scaleX(0);
+   transform-origin: bottom right;
+}
+
+.logo:hover::before {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+}
+
+.logo::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+   inset: 0 0 0 0;
+   z-index: 0;
+   background: hsl(200 100% 80%);
+   transition: transform .3s ease;
+}
+
+.singin-div {
+   width: 40vw;
+   height: 67vh;
+   position: relative;
+   top: 6em;
+   left: 30em;
+   background: #ffffff;
+   border-radius: 15px;
+}
+
+.singin-header {
+   position: absolute;
+   top: 2em;
+   left: 16em;
+   font-family: 'Bungee', cursive;
+}
+
+.user_name {
+   position: absolute;
+   color: #2C2E43;
+   top: 8.3em;
+   left: 13.8em;
+   font-size: 15px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.input-username{
+   position: absolute;
+   top: 10em;
+   left: 12.7em;
+   width: 15vw;
+   height: 5vh;
+   border: none;
+   border-radius: 5px;
+   background: #EEEEEE;
+   box-shadow: 0px 8px 24px  rgba(0, 0, 0, 0.15);
+}
+.input-username::placeholder {
+   position: absolute;
+   top: 0.5em;
+   left: 0.8em;
+   font-family: 'Poppins', sans-serif;
+}
+
+.email {
+   position: absolute;
+   top: 14em;
+   left: 13.4em;
+   color: #2C2E43;
+   font-family: 'Poppins', sans-serif;
+}
+
+.Email-input {
+   position: absolute;
+   top: 16em;
+   left: 12.7em;
+   width: 15vw;
+   height: 5vh;
+   border: none;
+   border-radius: 5px;
+   background: #EEEEEE;
+   box-shadow: 0px 8px 24px  rgba(0, 0, 0, 0.15);
+}
+
+.Email-input::placeholder {
+   position: absolute;
+   top: 0.5em;
+   left: 0.8em;
+   font-family: 'Poppins', sans-serif;
+}
+
+.password {
+   position: absolute;
+   top: 20em;
+   left: 13.4em;
+   color: #2C2E43;
+   font-family: 'Poppins', sans-serif;
+}
+
+.input-pass {
+   position: absolute;
+   top: 22em;
+   left: 12.7em;
+   width: 15vw;
+   height: 5vh;
+   border: none;
+   border-radius: 5px;
+   background: #EEEEEE;
+   box-shadow: 0px 8px 24px  rgba(0, 0, 0, 0.15);
+}
+
+.input-pass::placeholder {
+   position: absolute;
+   top: 0.5em;
+   left: 0.8em;
+   font-family: 'Poppins', sans-serif;
+}
+
+.Sing-btn {
+   position: absolute;
+   top: 27em; 
+   left: 15.7em;
+   width: 8vw;
+   height: 4.5vh;
+   border: none;
+   border-radius: 5px;
+   background: #141E61;
+   color: #ffffff;
+   font-family: 'Poppins', sans-serif;
+}
